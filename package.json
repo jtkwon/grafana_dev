@@ -1,0 +1,22 @@
+{
+  "name": "grafana_dev",
+  "version": "1.0.0",
+  "description": "```\r docker-compose up -d\r ```\r - This will mount volume in app/data  \r - Create new plugins under the `app/data/plugins` directory  \r Example:\r ```\r # under the app/data/plugins folder\r npx @grafana/toolkit plugin:create [name of new plugin]\r ```",
+  "main": "index.js",
+  "scripts": {
+    "create": "cd app/data/plugins && grafana-toolkit plugin:create"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jtkwon/grafana_dev.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jtkwon/grafana_dev/issues"
+  },
+  "homepage": "https://github.com/jtkwon/grafana_dev#readme",
+  "devDependencies": {
+    "@grafana/toolkit": "^8.0.6"
+  }
+}
