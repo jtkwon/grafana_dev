@@ -8,8 +8,6 @@ services:
     volumes:
       - './app/data:/var/lib/grafana'
       - './app/grafana.ini:/etc/grafana/grafana.ini'
-    env_file:
-      - .env
     networks:
       - grafana
 
